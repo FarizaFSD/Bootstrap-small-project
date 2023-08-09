@@ -21,7 +21,7 @@
         /* from gradient maker online */
       }
     </style>
-    <title>Employee Page</title>
+    <title>Jobs-List Page</title>
   </head>
   <body class="bg-light">
     <nav class="navbar navbark-dark navbar-expand-lg bg-dark shadow small mb-3">
@@ -120,61 +120,60 @@
       <div class="row justify-content-center">
         <div class="col-md-2">
           <div class="list-group shadow-sm small mb-3">
-            <div class="list-group-item active">Employees Data</div>
+            <div class="list-group-item active">Jobs Data</div>
             <a
               href="#"
               class="list-group-item list-group-item-action"
               data-bs-toggle="modal"
-              data-bs-target="#add_employees"
-              >Add Employee</a
+              data-bs-target="#add_job"
+              >Add Job</a
             >
             <a
-              href="Employees-list.html"
+              href="jobss-list.html"
               class="list-group-item list-group-item-action"
             >
-              View Employees</a
+              View Jobs</a
             >
           </div>
           <div class="list-group shadow-sm small mb-3">
             <div class="list-group-item active">Related Links</div>
 
             <a
-              href="jobs-list.html"
+              href="employees-list.html"
               class="list-group-item list-group-item-action"
             >
-              Jobs List</a
+              Employees List</a
             >
           </div>
         </div>
         <div class="col-md-8">
           <div class="card shadow-sm border-0 mb-3">
             <div class="card-header bg-dark text-white text-center">
-              Employees List
+              Jobs List
             </div>
             <table
               class="table table-sm small table-bordered align-middle mb-0"
             >
               <tr class="table-secondary">
                 <th>ID</th>
-                <th>Employee ID</th>
-                <th>Name</th>
-                <th>Email</th>
+
+                <th>Job Name</th>
+
                 <th>Details</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
               <tr>
                 <td>1</td>
-                <td>472</td>
-                <td>Fariza Akhmetova</td>
-                <td>fariza@gmail.com</td>
+                <td>Web-developer</td>
+
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
                       class="btn btn-sm btn-primary"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_detail"
+                      data-bs-target="#job_detail"
                       >Details</a
                     >
                   </div>
@@ -185,7 +184,7 @@
                       href="#"
                       class="btn btn-sm btn-warning"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_edit"
+                      data-bs-target="#job_edit"
                       >Edit</a
                     >
                   </div>
@@ -196,24 +195,23 @@
                       href="#"
                       class="btn btn-sm btn-danger"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_delete"
+                      data-bs-target="#job_delete"
                       >Delete</a
                     >
                   </div>
                 </td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>472</td>
-                <td>Fariza Akhmetova</td>
-                <td>fariza@gmail.com</td>
+                <td>2</td>
+                <td>Data Scientist</td>
+
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
                       class="btn btn-sm btn-primary"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_detail"
+                      data-bs-target="#job_detail"
                       >Details</a
                     >
                   </div>
@@ -224,7 +222,7 @@
                       href="#"
                       class="btn btn-sm btn-warning"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_edit"
+                      data-bs-target="#job_edit"
                       >Edit</a
                     >
                   </div>
@@ -235,24 +233,23 @@
                       href="#"
                       class="btn btn-sm btn-danger"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_delete"
+                      data-bs-target="#job_delete"
                       >Delete</a
                     >
                   </div>
                 </td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>472</td>
-                <td>Fariza Akhmetova</td>
-                <td>fariza@gmail.com</td>
+                <td>3</td>
+                <td>Product Manager</td>
+
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
                       class="btn btn-sm btn-primary"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_detail"
+                      data-bs-target="#job_detail"
                       >Details</a
                     >
                   </div>
@@ -263,7 +260,7 @@
                       href="#"
                       class="btn btn-sm btn-warning"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_edit"
+                      data-bs-target="#job_edit"
                       >Edit</a
                     >
                   </div>
@@ -274,24 +271,23 @@
                       href="#"
                       class="btn btn-sm btn-danger"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_delete"
+                      data-bs-target="#job_delete"
                       >Delete</a
                     >
                   </div>
                 </td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>472</td>
-                <td>Fariza Akhmetova</td>
-                <td>fariza@gmail.com</td>
+                <td>4</td>
+                <td>Devops</td>
+
                 <td>
                   <div class="d-grid">
                     <a
                       href="#"
                       class="btn btn-sm btn-primary"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_detail"
+                      data-bs-target="#job_detail"
                       >Details</a
                     >
                   </div>
@@ -302,7 +298,7 @@
                       href="#"
                       class="btn btn-sm btn-warning"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_edit"
+                      data-bs-target="#job_edit"
                       >Edit</a
                     >
                   </div>
@@ -313,7 +309,45 @@
                       href="#"
                       class="btn btn-sm btn-danger"
                       data-bs-toggle="modal"
-                      data-bs-target="#employee_delete"
+                      data-bs-target="#job_delete"
+                      >Delete</a
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Web-designer</td>
+
+                <td>
+                  <div class="d-grid">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#job_detail"
+                      >Details</a
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="d-grid">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-warning"
+                      data-bs-toggle="modal"
+                      data-bs-target="#job_edit"
+                      >Edit</a
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="d-grid">
+                    <a
+                      href="#"
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#job_delete"
                       >Delete</a
                     >
                   </div>
@@ -325,10 +359,10 @@
       </div>
     </div>
 
-    <!-- add Employee Modal -->
+    <!-- add JOB Modal -->
     <div
       class="modal fade"
-      id="add_employees"
+      id="add_job"
       data-bs-backdrop="static"
       tabindex="-1"
       aria-hidden="true"
@@ -337,7 +371,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-dark text-white">
-            <h5 class="modal-title">Add Employee Details</h5>
+            <h5 class="modal-title">Add Job Details</h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -356,65 +390,21 @@
                       required
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="mb-3">
                       <input
                         type="text"
                         class="form-control form-control-sm"
-                        placeholder="First Name"
+                        placeholder="Job Name"
                         required
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control form-control-sm"
-                        placeholder="Last Name"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="email"
-                        class="form-control form-control-sm"
-                        placeholder="Email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="tel"
-                        class="form-control form-control-sm"
-                        placeholder="Phone Number"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="mb-3">
-                      <select
-                        class="form-select form-select-sm"
-                        aria-label="job assigned"
-                      >
-                        <option selected>Select job for Employee</option>
-                        <option value="Programmer">Programmer</option>
-                        <option value="Manager">Manager</option>
-                        <option value="Team-lead">Team-lead</option>
-                        <option value="Devops">Devops</option>
-                      </select>
-                    </div>
-                  </div>
                   <div class="col-md-10">
                     <div class="d-grid">
                       <button type="submit" class="btn btn-sm btn-success">
-                        Add Employee
+                        Add Job Details
                       </button>
                     </div>
                   </div>
@@ -437,12 +427,12 @@
         </div>
       </div>
     </div>
-    <!-- add Employee Modal -->
+    <!-- add JOB Modal -->
 
-    <!-- EMPLOYEE DETAİLS MODAL -->
+    <!-- JOB DETAİLS MODAL -->
     <div
       class="modal fade"
-      id="employee_detail"
+      id="job_detail"
       data-bs-backdrop="static"
       tabindex="-1"
       aria-hidden="true"
@@ -451,7 +441,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-dark text-white">
-            <h5 class="modal-title">Employee Details</h5>
+            <h5 class="modal-title">Job Details</h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -466,28 +456,12 @@
                 <td>1</td>
               </tr>
               <tr>
-                <th>Employee ID</th>
-                <td>472</td>
+                <th>Date</th>
+                <td>25th July 2023</td>
               </tr>
               <tr>
-                <th>First Name</th>
-                <td>Fariza</td>
-              </tr>
-              <tr>
-                <th>Last Name</th>
-                <td>Akhmetova</td>
-              </tr>
-              <tr>
-                <th>Email İD</th>
-                <td>fariza@gmail.com</td>
-              </tr>
-              <tr>
-                <th>Phone</th>
-                <td>475859003</td>
-              </tr>
-              <tr>
-                <th>Joining Date</th>
-                <td>09.08.2023</td>
+                <th>Job Name</th>
+                <td>Web-developer</td>
               </tr>
             </table>
           </div>
@@ -496,7 +470,7 @@
               href="#"
               class="btn btn-sm btn-warning"
               data-bs-toggle="modal"
-              data-bs-target="#employee_edit"
+              data-bs-target="#job_edit"
               >Edit Details</a
             >
             <a
@@ -510,12 +484,12 @@
         </div>
       </div>
     </div>
-    <!-- EMPLOYEE DETAİLS MODAL -->
+    <!-- JOB DETAİLS MODAL -->
 
-    <!-- EDİT Employee Modal -->
+    <!-- EDİT JOB Modal -->
     <div
       class="modal fade"
-      id="employee_edit"
+      id="job_edit"
       data-bs-backdrop="static"
       tabindex="-1"
       aria-hidden="true"
@@ -524,7 +498,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-dark text-white">
-            <h5 class="modal-title">Edit Employee Details</h5>
+            <h5 class="modal-title">Edit Job Details</h5>
             <button
               type="button"
               class="btn-close btn-close-white"
@@ -540,73 +514,26 @@
                     <input
                       type="date"
                       class="form-control form-control-sm"
-                      value="2023-08-09"
+                      value="25.07.2023"
                       required
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <div class="mb-3">
                       <input
                         type="text"
                         class="form-control form-control-sm"
-                        placeholder="First Name"
-                        value="Fariza"
+                        placeholder="Job Name"
+                        value="Web-developer"
                         required
                       />
                     </div>
                   </div>
 
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="text"
-                        class="form-control form-control-sm"
-                        placeholder="Last Name"
-                        value="Akhmetova"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="email"
-                        class="form-control form-control-sm"
-                        placeholder="Email"
-                        value="fariza@gmail.com"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="tel"
-                        class="form-control form-control-sm"
-                        placeholder="Phone Number"
-                        value="899364580"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="mb-3">
-                      <select
-                        class="form-select form-select-sm"
-                        aria-label="job assigned"
-                      >
-                        <option>Select job for Employee</option>
-                        <option value="Programmer">Programmer</option>
-                        <option value="Manager">Manager</option>
-                        <option value="Team-lead">Team-lead</option>
-                        <option selected value="Devops">Devops</option>
-                      </select>
-                    </div>
-                  </div>
                   <div class="col-md-10">
                     <div class="d-grid">
                       <button type="submit" class="btn btn-sm btn-warning">
-                        Update Employee
+                        Update Job Details
                       </button>
                     </div>
                   </div>
@@ -614,7 +541,7 @@
                     <div class="d-grid">
                       <button
                         type="button"
-                        class="btn btn-sm btn-success"
+                        class="btn btn-sm btn-danger"
                         data-bs-dismiss="modal"
                         aria-label="Close"
                       >
@@ -629,12 +556,12 @@
         </div>
       </div>
     </div>
-    <!-- EDİT Employee Modal -->
+    <!-- EDİT JOB Modal -->
 
     <!-- delete MODAL -->
     <div
       class="modal fade"
-      id="employee_delete"
+      id="job_delete"
       data-bs-backdrop="static"
       tabindex="-1"
       aria-hidden="true"
@@ -646,7 +573,7 @@
             class="modal-body text-center d-flex justify-content-between align-items-center"
           >
             <h4 class="fw-light m-0">
-              Do you want to delete <strong> <q>Fariza Akhmetova</q></strong>
+              Do you want to delete job <strong> <q> Web-developer</q></strong>
             </h4>
             <button
               type="button"
